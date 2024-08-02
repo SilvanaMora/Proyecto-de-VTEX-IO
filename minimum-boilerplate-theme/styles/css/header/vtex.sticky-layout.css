@@ -1,0 +1,7 @@
+/*estilo desktop y mobile de header completo*/
+.container--desktop__header,
+.container--mobile__header
+{
+    background-color: white; 
+}
+

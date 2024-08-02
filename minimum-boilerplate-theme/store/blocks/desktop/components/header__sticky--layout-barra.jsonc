@@ -1,0 +1,431 @@
+{
+  "sticky-layout#desktop__header": {
+    "props": {
+      "blockClass": "desktop__header"
+    },
+    "children": [
+      "flex-layout.row#desktop__header--main"
+     // "flex-layout.row#desktop__header-bar-options2"
+    ]
+  },
+  "flex-layout.row#desktop__header--main": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "padding":"0 20px",
+      "blockClass": "desktop__header--main"
+    },
+    "children": [
+    //  "flex-layout.col#spacer",
+      "flex-layout.col#desktop__menu-icon",
+      "flex-layout.col#desktop__logo",
+     // "flex-layout.col#spacer",
+      "search-bar",
+     // "flex-layout.col#spacer",
+      "flex-layout.col#desktop__header--bar", 
+      //"flex-layout.col#spacer",
+     // "locale-switcher",
+      "minicart.v2",
+      "login"
+    //  "flex-layout.col#spacer" 
+      
+    ]
+  },
+  "flex-layout.col#desktop__logo": {
+    "props": {
+      "verticalAlign": "middle",
+      "padding": "10px 0",
+      "blockClass":"flex-layout.col#desktop__logo"
+},
+    "children": ["image#global__logo-itg"]
+  },
+  "flex-layout.col#desktop__menu-icon": {
+    "props": {
+      "verticalAlign": "middle",
+      "padding": "10px 0",
+      "blockClass":"flex-layout.col#desktop__menu-icon"
+},
+    "children": ["image#global__menu-icon"]
+},
+"flex-layout.col#desktop__header--bar":{
+  "props": {
+    "blockClass": "desktop__header--bar"
+  },
+  "children": ["flex-layout.row#desktop__header--bar-fila"]
+},
+  "flex-layout.row#desktop__header--bar-fila": {
+    "title": "Header Bar Options",
+    "children": [
+      "flex-layout.col#desktop__header--col-1-tendencias-it-globers",
+      "flex-layout.col#desktop__header--col-2-coleccion-del-mes",
+      "flex-layout.col#desktop__header--col-3-ofertas-enero",
+      "flex-layout.col#desktop__header--col-4-cyber-monday",
+      "flex-layout.col#desktop__header--col-5-never-say-never"
+    ],
+    "props": {
+      "blockClass": "desktop__header--bar-fila"
+    }
+  },
+  "flex-layout.col#desktop__header--col-1-tendencias-it-globers": {
+    "children": [
+      "rich-text#desktop__header--text-tendencias-it-globers"
+    ],
+    "props": {
+      "blockClass":"desktop__header--col-bar1"
+    }
+  },
+  "flex-layout.col#desktop__header--col-2-coleccion-del-mes": {
+    "children": [
+      "rich-text#desktop__header--text-coleccion-del-mes"
+    ],
+    "props": {
+      "blockClass":"desktop__header--col-bar"
+    }
+  },
+  "flex-layout.col#desktop__header--col-3-ofertas-enero": {
+    "children": [
+      "rich-text#desktop__header--text-ofertas-enero"
+    ],
+    "props": {
+      "blockClass":"desktop__header--col-bar"
+    }
+  },
+  "flex-layout.col#desktop__header--col-4-cyber-monday": {
+    "children": [
+      "rich-text#desktop__header--text-cyber-monday"
+    ],
+    "props": {
+      "blockClass":"desktop__header--col-bar"
+    }
+  },
+  "flex-layout.col#desktop__header--col-5-never-say-never": {
+    "children": [
+      "rich-text#desktop__header--text-never-say-never"
+    ],
+    "props": {
+      "blockClass":"desktop__header--col-bar"
+    }
+  },
+  "rich-text#desktop__header--text-tendencias-it-globers": {
+    "props": {
+      "text": "Tendencias de ITGlobers",
+      "blockClass":"desktop__header-text"
+      
+    }
+  },
+  "rich-text#desktop__header--text-coleccion-del-mes": {
+    "props": {
+      "text": "Colección del mes",
+      "blockClass":"desktop__header-text"
+    }
+  },
+  "rich-text#desktop__header--text-ofertas-enero": {
+    "props": {
+      "text": "Ofertas enero",
+      "blockClass":"desktop__header-text"
+    }
+  },
+  "rich-text#desktop__header--text-cyber-monday": {
+    "props": {
+      "text": "Cyber Monday",
+      "blockClass":"desktop__header-text"
+    }
+  },
+  "rich-text#desktop__header--text-never-say-never": {
+    "props": {
+      "text": "Never say never",
+      "blockClass":"desktop__header-text"
+  }
+}
+}
+/* vamos a reemplazar este codigo 
+  "flex-layout.row#desktop__header-bar-options2": {
+    "title": "Header Bar",
+    "children": [
+      "flex-layout.col#desktop__header--col-1-food",
+      "flex-layout.col#desktop__header--col-2-fitness",
+      "flex-layout.col#desktop__header--col-3-artic",
+      "flex-layout.col#desktop__header--col-4-poolday",
+      "flex-layout.col#desktop__header--col-5-hotel",
+      "flex-layout.col#desktop__header--col-6-house",
+      "flex-layout.col#desktop__header--col-7-nature",
+      "flex-layout.col#desktop__header--col-8-closet",
+      "flex-layout.col#desktop__header--col-9-beach",
+      "flex-layout.col#desktop__header--col-10-mountaineering",
+      "flex-layout.col#desktop__header--col-11-delivery",
+      "flex-layout.col#desktop__header--col-12-beer"
+    ],
+    "props": {
+      "blockClass": "desktop__header-bar-options2"
+    }
+  },
+"flex-layout.col#desktop__header--col-1-food": {
+  "children": [
+    "image#desktop__header--col-1-image-food",
+    "rich-text#desktop__header--col-1-text-food"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-2-fitness": {
+  "children": [
+    "image#desktop__header--col-2-image-fitness",
+    "rich-text#desktop__header--col-2-text-fitness"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-3-artic": {
+  "children": [
+    "image#desktop__header--col-3-image-artic",
+    "rich-text#desktop__header--col-3-text-artic"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-4-poolday": {
+  "children": [
+    "image#desktop__header--col-4-image-poolday",
+    "rich-text#desktop__header--col-4-text-poolday"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-5-hotel": {
+  "children": [
+    "image#desktop__header--col-5-image-hotel",
+    "rich-text#desktop__header--col-5-text-hotel"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-6-house": {
+  "children": [
+    "image#desktop__header--col-6-image-house",
+    "rich-text#desktop__header--col-6-text-house"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-7-nature": {
+  "children": [
+    "image#desktop__header--col-7-image-nature",
+    "rich-text#desktop__header--col-7-text-nature"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-8-closet": {
+  "children": [
+    "image#desktop__header--col-8-image-closet",
+    "rich-text#desktop__header--col-8-text-closet"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-9-beach": {
+  "children": [
+    "image#desktop__header--col-9-image-beach",
+    "rich-text#desktop__header--col-9-text-beach"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-10-mountaineering": {
+  "children": [
+    "image#desktop__header--col-10-image-mountaineering",
+    "rich-text#desktop__header--col-10-text-mountaineering"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-11-delivery": {
+  "children": [
+    "image#desktop__header--col-11-image-delivery",
+    "rich-text#desktop__header--col-11-text-delivery"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"flex-layout.col#desktop__header--col-12-beer": {
+  "children": [
+    "image#desktop__header--col-12-image-beer",
+    "rich-text#desktop__header--col-12-text-beer"
+  ],
+  "props": {
+    "blockClass": "desktop__header--col-bar2" 
+  }
+},
+"image#desktop__header--col-1-image-food": {
+  "props": {
+    "src": "/arquivos/food.png",
+    "alt": "Food",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-1-text-food": {
+  "props": {
+    "text": "Food",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"image#desktop__header--col-2-image-fitness": {
+  "props": {
+    "src": "/arquivos/fitness.png",
+    "alt": "Fitness",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-2-text-fitness": {
+  "props": {
+    "text": "Fitness",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-3-image-artic": {
+  "props": {
+    "src": "/arquivos/artico.png",
+    "alt": "En el Ártico",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-3-text-artic": {
+  "props": {
+    "text": "En el Ártico",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-4-image-poolday": {
+  "props": {
+    "src": "/arquivos/poolday.png",
+    "alt": "Poolday",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-4-text-poolday": {
+  "props": {
+    "text": "Poolday",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-5-image-hotel": {
+  "props": {
+    "src": "/arquivos/hotel.png",
+    "alt": "Hoteles",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-5-text-hotel": {
+  "props": {
+    "text": "Hoteles",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-6-image-house": {
+  "props": {
+    "src": "/arquivos/house.png",
+    "alt": "Casas",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-6-text-house": {
+  "props": {
+    "text": "Casas",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+
+"image#desktop__header--col-7-image-nature": {
+  "props": {
+    "src": "/arquivos/naturaleza.png",
+    "alt": "Naturales",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-7-text-nature": {
+  "props": {
+    "text": "Naturales",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-8-image-closet": {
+  "props": {
+    "src": "/arquivos/closet.png",
+    "alt": "Closet",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-8-text-closet": {
+  "props": {
+    "text": "Closet",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-9-image-beach": {
+  "props": {
+    "src": "/arquivos/playa.png",
+    "alt": "Playas",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-9-text-beach": {
+  "props": {
+    "text": "Playas",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-10-image-mountaineering": {
+  "props": {
+    "src": "/arquivos/alpinismo.png",
+    "alt": "Alpinismo",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-10-text-mountaineering": {
+  "props": {
+    "text": "Alpinismo",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-11-image-delivery": {
+  "props": {
+    "src": "/arquivos/delivery.png",
+    "alt": "Delivery",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-11-text-delivery": {
+  "props": {
+    "text": "Delivery",
+    "blockClass":"desktop__header--col-text"
+  }
+},
+"image#desktop__header--col-12-image-beer": {
+  "props": {
+    "src": "/arquivos/cerveza.png",
+    "alt": "Cervezas",
+    "blockClass":"desktop__header--col-image"
+  }
+},
+"rich-text#desktop__header--col-12-text-beer": {
+  "props": {
+    "text": "Cervezas",
+    "blockClass":"desktop__header--col-text"
+  }
+}*/
+
+

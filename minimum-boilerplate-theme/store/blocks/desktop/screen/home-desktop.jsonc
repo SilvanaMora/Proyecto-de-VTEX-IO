@@ -1,6 +1,10 @@
 {
-  "responsive-layout.desktop#home__image-complet": {
-    "title": "Home desktop image watch complet",
-    "children": ["list-context.image-list#home-desktop"]
+  "responsive-layout.desktop#desktop__home": {
+    "title": "Home desktop",
+    "children": [
+      "list-context.image-list#desktop__home--image-main",
+      "rich-text#global__text-next-watch",
+      "slider-layout#desktop__home--slider-card"
+    ]
   }
 }

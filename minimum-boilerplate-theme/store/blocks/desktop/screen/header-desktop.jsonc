@@ -1,7 +1,8 @@
 {
     "header-layout.desktop": {
     "children": [
-      "sticky-layout#desktop"
+      "sticky-layout#desktop__header",
+      "vtex.menu@2.x:menu#global__header--menu-item"
     ]
   }
 }

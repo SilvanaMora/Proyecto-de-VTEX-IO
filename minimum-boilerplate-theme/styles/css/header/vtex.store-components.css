@@ -1,0 +1,8 @@
+.autoCompleteOuterContainer :global(.vtex-input-prefix__group){
+    width: 280px;
+    height: 40px;
+    gap: 16px;
+    border-radius: 40px;
+    opacity: 0px;
+    
+}

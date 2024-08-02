@@ -5,12 +5,20 @@
     }
   },
 
-  "logo": {
+  "image#global__logo-itg": {
     "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
-      "width": "80"
+      "src": "/arquivos/icono-itg.svg",
+      "alt": "something something",
+      "title": "Logo ITG",
+      "blockClass": "global__logo-itg"
+    }
+  },
+  "image#global__menu-icon": {
+    "props": {
+      "src": "/arquivos/hamburguer-menu.png",
+      "alt": "something something",
+      "title": "Menu icon ",
+      "blockClass": "global__menu-icon"
     }
   }
 

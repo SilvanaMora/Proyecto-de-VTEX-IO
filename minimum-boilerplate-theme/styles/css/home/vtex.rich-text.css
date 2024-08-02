@@ -1,3 +1,57 @@
 .paragraph--titulo-pricipal {
     color:aqua
 }
+
+/*Estilos desktop y mobile */
+.link--desktop__home--button-card,
+.link--mobile__home--button-card {
+    border-radius: 40px; 
+    background-color: #1D2734; 
+    color: #ffffff; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    line-height: 18px; 
+    text-align: center; 
+    font-size: 14px; 
+    
+}
+
+/* Estilos desktop */
+.link--desktop__home--button-card {
+    width: 134px;
+    height: 43px; 
+    padding: 8px; 
+    border: 0.86px solid; 
+    gap: 8px;  
+    font-weight: 400;   
+}
+
+/* Estilos mobile */
+.link--mobile__home--button-card {
+    width: 120px; 
+    height: 40px; 
+    padding: 6.45px; 
+    border: 0.65px solid; 
+    gap: 6.45px; 
+    font-weight: 500;  
+}
+
+/* Estilos desktop y mobile para el pseudoelemento ::after en ambos botones*/
+.link--desktop__home--button-card::after, 
+.link--mobile__home--button-card::after {
+  content: '→'; 
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+/*Estilos dektop y mobile para container button */
+.container--desktop__home--button-card,
+.container--mobile__home--button-card
+{
+  justify-content: center;
+}
+

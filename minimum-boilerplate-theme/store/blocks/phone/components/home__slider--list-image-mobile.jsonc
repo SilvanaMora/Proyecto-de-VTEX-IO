@@ -1,17 +1,14 @@
 {
-    "list-context.image-list#home-phone": {
-    "title": "Image watch phone",
-    "children": ["slider-layout#image-home-phone"],
+  "list-context.image-list#phone__home--image-watch": {
+    "title": "phone Image watch ",
+    "children": ["slider-layout#phone__home--slider-image-watch"],
     "props": {
+      "blockClass":"phone-home-image-watch",
       "preload": true,
-      "width": "1280px",
-      "top": "168px",
-      "gap": "0px",
-      "opacity": "0px",
       "images": [
         {
           "loading": "eager",
-          "src": "/arquivos/home-mobile.png",
+          "src": "/arquivos/home-mobile.png", 
           "description": "something something",
           "link": {
             "url": "#"
@@ -21,9 +18,10 @@
     }
   },
 
-  "slider-layout#image-home-phone": {
+  "slider-layout#phone__home--slider-image-watch": {
     "title": "Slider home phone",
     "props": {
+      "blockClass":"phone__slider--homw-image-watch",
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,

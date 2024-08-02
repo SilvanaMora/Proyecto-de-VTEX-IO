@@ -1,13 +1,16 @@
 {
-    "list-context.image-list#home-desktop": {
-    "title": "Image watch desktop",
-    "children": ["slider-layout#image-home-desktop"],
+  "list-context.image-list#desktop__home--image-main": {
+    "title": "Desktop image watch full",
+    "children": [
+      "slider-layout#desktop__home--slider-image-watch"
+    ],
     "props": {
       "preload": true,
-      "width": "1280px",
+      "width": "3000px",
       "top": "168px",
       "gap": "0px",
       "opacity": "0px",
+      "blockClass":"desktop__home--image-main",
       "images": [
         {
           "loading": "eager",
@@ -21,9 +24,10 @@
     }
   },
 
-  "slider-layout#image-home-desktop": {
-    "title": "Slider home desktop",
+  "slider-layout#desktop__home--slider-image-watch": {
+    "title": "Desktop slider home watch full ",
     "props": {
+      "blockClass":"desktop__home--slider-image-watch",
       "itemsPerPage": {
         "desktop": 5,
         "tablet": 3,

@@ -1,7 +1,10 @@
 {
-    "responsive-layout.phone#home__image-one-part": {
-      "title": "Home phone image watch one part",
-      "children": ["list-context.image-list#home-phone"]
+    "responsive-layout.phone#phone__home": {
+      "title": "Phone home image watch one part",
+      "children": [ 
+      "list-context.image-list#phone__home--image-watch",
+      "rich-text#global__text-next-watch"
+     ]
     }
   }
   

@@ -1,0 +1,336 @@
+{
+  "sticky-layout#mobile__header": {
+      "props": {
+        "blockClass": "mobile__header"
+      },
+    "children": [
+      "flex-layout.row#mobile__header--main"
+     // "flex-layout.row#mobile__header-bar-options2"
+    ]
+   
+  },
+  "flex-layout.row#mobile__header--main": {
+    "children": [
+      "flex-layout.col#spacer",
+      "flex-layout.col#mobile__menu-icon",
+      "flex-layout.col#mobile__logo",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "minicart.v2",
+      "login"
+    ],
+    "props": {
+      "blockClass": "mobile__header--main",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#mobile__logo": {
+    "props": {
+      "verticalAlign": "middle",
+      "padding": "10px 0"
+},
+    "children": ["image#global__logo-itg"] 
+},
+"flex-layout.col#mobile__menu-icon": {
+  "props": {
+    "verticalAlign": "middle",
+    "padding": "10px 0"
+},
+  "children": [ "image#global__menu-icon"]
+  }
+}
+
+
+
+ // vamos a reemplazar este codigo
+ /* "flex-layout.row#mobile__header-bar-options2": {
+    "title": "Header Bar",
+    "children": [
+      "flex-layout.col#mobile__header--col-1-food",
+      "flex-layout.col#mobile__header--col-2-fitness",
+      "flex-layout.col#mobile__header--col-3-artic",
+      "flex-layout.col#mobile__header--col-4-poolday",
+      "flex-layout.col#mobile__header--col-5-hotel",
+      "flex-layout.col#mobile__header--col-6-house",
+      "flex-layout.col#mobile__header--col-7-nature",
+      "flex-layout.col#mobile__header--col-8-closet",
+      "flex-layout.col#mobile__header--col-9-beach",
+      "flex-layout.col#mobile__header--col-10-mountaineering",
+      "flex-layout.col#mobile__header--col-11-delivery",
+      "flex-layout.col#mobile__header--col-12-beer"
+    ],
+    "props": {
+      "blockClass": "mobile__header-bar-options2",
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto"
+    }
+  },
+"flex-layout.col#mobile__header--col-1-food": {
+  "children": [
+    "image#mobile__header--col-1-image-food",
+    "rich-text#mobile__header--col-1-text-food"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-2-fitness": {
+  "children": [
+    "image#mobile__header--col-2-image-fitness",
+    "rich-text#mobile__header--col-2-text-fitness"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-3-artic": {
+  "children": [
+    "image#mobile__header--col-3-image-artic",
+    "rich-text#mobile__header--col-3-text-artic"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-4-poolday": {
+  "children": [
+    "image#mobile__header--col-4-image-poolday",
+    "rich-text#mobile__header--col-4-text-poolday"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-5-hotel": {
+  "children": [
+    "image#mobile__header--col-5-image-hotel",
+    "rich-text#mobile__header--col-5-text-hotel"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-6-house": {
+  "children": [
+    "image#mobile__header--col-6-image-house",
+    "rich-text#mobile__header--col-6-text-house"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-7-nature": {
+  "children": [
+    "image#mobile__header--col-7-image-nature",
+    "rich-text#mobile__header--col-7-text-nature"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-8-closet": {
+  "children": [
+    "image#mobile__header--col-8-image-closet",
+    "rich-text#mobile__header--col-8-text-closet"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-9-beach": {
+  "children": [
+    "image#mobile__header--col-9-image-beach",
+    "rich-text#mobile__header--col-9-text-beach"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-10-mountaineering": {
+  "children": [
+    "image#mobile__header--col-10-image-mountaineering",
+    "rich-text#mobile__header--col-10-text-mountaineering"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-11-delivery": {
+  "children": [
+    "image#mobile__header--col-11-image-delivery",
+    "rich-text#mobile__header--col-11-text-delivery"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"flex-layout.col#mobile__header--col-12-beer": {
+  "children": [
+    "image#mobile__header--col-12-image-beer",
+    "rich-text#mobile__header--col-12-text-beer"
+  ],
+  "props": {
+    "blockClass": "mobile__header--col-bar-options2" 
+  }
+},
+"image#mobile__header--col-1-image-food": {
+  "props": {
+    "src": "/arquivos/food.png",
+    "alt": "Food",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-1-text-food": {
+  "props": {
+    "text": "Food",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"image#mobile__header--col-2-image-fitness": {
+  "props": {
+    "src": "/arquivos/fitness.png",
+    "alt": "Fitness",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-2-text-fitness": {
+  "props": {
+    "text": "Fitness",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-3-image-artic": {
+  "props": {
+    "src": "/arquivos/artico.png",
+    "alt": "En el Ártico",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-3-text-artic": {
+  "props": {
+    "text": "En el Ártico",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-4-image-poolday": {
+  "props": {
+    "src": "/arquivos/poolday.png",
+    "alt": "Poolday",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-4-text-poolday": {
+  "props": {
+    "text": "Poolday",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-5-image-hotel": {
+  "props": {
+    "src": "/arquivos/hotel.png",
+    "alt": "Hoteles",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-5-text-hotel": {
+  "props": {
+    "text": "Hoteles",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-6-image-house": {
+  "props": {
+    "src": "/arquivos/house.png",
+    "alt": "Casas",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-6-text-house": {
+  "props": {
+    "text": "Casas",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+
+"image#mobile__header--col-7-image-nature": {
+  "props": {
+    "src": "/arquivos/naturaleza.png",
+    "alt": "Naturales",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-7-text-nature": {
+  "props": {
+    "text": "Naturales",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-8-image-closet": {
+  "props": {
+    "src": "/arquivos/closet.png",
+    "alt": "Closet",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-8-text-closet": {
+  "props": {
+    "text": "Closet",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-9-image-beach": {
+  "props": {
+    "src": "/arquivos/playa.png",
+    "alt": "Playas",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-9-text-beach": {
+  "props": {
+    "text": "Playas",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-10-image-mountaineering": {
+  "props": {
+    "src": "/arquivos/alpinismo.png",
+    "alt": "Alpinismo",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-10-text-mountaineering": {
+  "props": {
+    "text": "Alpinismo",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-11-image-delivery": {
+  "props": {
+    "src": "/arquivos/delivery.png",
+    "alt": "Delivery",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-11-text-delivery": {
+  "props": {
+    "text": "Delivery",
+    "blockClass":"mobile__header--col-text"
+  }
+},
+"image#mobile__header--col-12-image-beer": {
+  "props": {
+    "src": "/arquivos/cerveza.png",
+    "alt": "Cervezas",
+    "blockClass":"mobile__header--col-image"
+  }
+},
+"rich-text#mobile__header--col-12-text-beer": {
+  "props": {
+    "text": "Cervezas",
+    "blockClass":"mobile__header--col-text"
+  }
+}*/
+
+  

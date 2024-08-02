@@ -1,0 +1,9 @@
+{
+  "rich-text#global__text-next-watch": {
+    "title": "Desktop text next watch",
+    "props": {
+      "text": "An amazing product.",
+      "blockClass":"global__text-next-watch"
+    }
+}
+}

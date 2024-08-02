@@ -1,0 +1,148 @@
+{ "slider-layout#desktop__home--slider-card": {
+      "title": "Desktop home slider card",
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 2
+        },
+        "infinite": true,
+        "showNavigationArrows": "desktopOnly",
+        "blockClass": "desktop__home--slider-card"
+      },
+      "children": [
+        "flex-layout.row#desktop__home--row-card",
+        "flex-layout.row#desktop__home--row-card",
+        "flex-layout.row#desktop__home--row-card",
+        "flex-layout.row#desktop__home--row-card",
+        "flex-layout.row#desktop__home--row-card",
+        "flex-layout.row#desktop__home--row-card"
+      ]
+    },
+  
+    "flex-layout.row#desktop__home--row-card": {
+      "title": "Desktop home row card",
+      "children": [
+        "flex-layout.col#desktop__home--col-card"
+      ],
+      "props": {
+        "blockClass": "desktop__home--row-card"
+      }
+    },
+  
+    "flex-layout.col#desktop__home--col-card": {
+      "title": "Desktop home col card",
+      "children": [
+        "flex-layout.row#desktop__home--rowcard-inside1",
+        "flex-layout.row#desktop__home--rowcard-inside2",
+        "flex-layout.row#desktop__home--rowcard-inside3"
+      ],
+      
+      "props": {
+        "blockClass":"desktop__home--col-card"
+      }
+    },
+  
+    "flex-layout.row#desktop__home--rowcard-inside1": {
+      "title": "Desktop home rowcard inside1",
+      "children": [
+        "image#desktop__home--image-main-card"
+      ],
+      "props": {
+        "blockClass": "desktop__home--rowcard-inside1"
+      }
+    },
+  
+    "flex-layout.row#desktop__home--rowcard-inside2": {
+      "title": "Desktop home rowcard inside2",
+      "children": [
+        "flex-layout.col#desktop__home--col1-inside",
+        "flex-layout.col#flex-layout.col#desktop__home--col2-inside"
+      ],
+      "props": {
+        "blockClass": "desktop__home--rowcard-inside2"
+      }
+    },
+    "flex-layout.col#desktop__home--col1-inside": {
+      "title": "Desktop home col1 inside",
+      "children": [
+        "rich-text#desktop__home--title-card",
+        "rich-text#desktop__home--text-card"
+      ],
+      "props": {
+        "blockClass": "desktop__home--col1-inside",
+        "width":"80%"
+      }
+    },
+  
+    "flex-layout.col#flex-layout.col#desktop__home--col2-inside": {
+      "title": "Desktop__home--col2-inside",
+      "children": [
+        "image#desktop__home--image-gold"
+      ],
+      "props": {
+        "blockClass": "desktop__home--col2-inside",
+        "width":"20%",
+        "verticalAlign": "top", 
+        "horizontalAlign": "right",  
+        "padding": "0",  
+        "margin": "0"
+  }
+    },
+  
+    "flex-layout.row#desktop__home--rowcard-inside3": {
+      "title": "Desktop home rowcard inside3",
+      "children": [
+        "rich-text#desktop__home--button-card"
+      ],
+      "props": {
+        "blockClass": "desktop__home--rowcard-inside3" 
+      }
+    },
+  
+  
+    "image#desktop__home--image-main-card": {
+      "title": "Desktop home image main card",
+      "props": {
+        "src": "/arquivos/image-heading.png",
+        "alt": "Image 1",
+        "blockClass":"desktop__home--image-main-card"
+      }
+    },
+  
+    "rich-text#desktop__home--title-card": {
+      "title": "Desktop home title card",
+      "props": {
+        "text": "Heading",
+        "blockClass":"desktop__home--title-card"
+   
+      }
+    },
+  
+    "rich-text#desktop__home--text-card": {
+      "title": "Desktop__home--text-card",
+      "props": {
+        "text": "Builder platform is made by, buildership platfomr is made by…",
+        "blockClass":"desktop__home--text-card"
+   
+      }
+    },
+  
+    "image#desktop__home--image-gold": {
+      "title": "Desktop__home--image-gold",
+      "props": {
+        "src": "/arquivos/image-gold.png",
+        "alt": "Side Image",
+        "blockClass":"desktop__home--image-gold"
+  
+      }
+    },
+    "rich-text#desktop__home--button-card": {
+      "title": "Desktop home button card",
+      "props": {
+        "text": "[Ver precio](#)",
+        "blockClass": "desktop__home--button-card"
+      }
+  } 
+  }
+  
